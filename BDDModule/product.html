@@ -1,0 +1,61 @@
+<html>
+<head>
+<title>Product Page</title>
+</head>
+<script >
+function cart(){
+		alert("Product is added to cart.");
+}
+function wishlist(){
+	alert("Product is added to wishlist.");
+}
+</script>
+
+<body>
+<table>
+    <tr>
+        <td rowspan="8"><img src="8.jpg" width="250px" height="250px" alt="{{product.photo}}"/></td>
+        <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+        <td><h3>IPhone XR</h3></td>
+    </tr>
+    <tr>
+            <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+            <td><b>Brand:</b> Apple</td>
+    </tr>
+    <tr>
+            <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+            <td><b>Price:</b> 45000/-
+                <!-- <div>Discount Amount Here</div> -->
+            </td>
+    </tr>
+    <tr>
+            <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+            <td><b>Description:</b> Latest Model</td>
+    </tr>
+    <tr>
+            <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+            <td><b>Category:</b> Electronics</td>
+    </tr>
+    <tr>
+            <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+            <td><b>Sub-Category:</b> Mobile</td>
+    </tr>
+    <!-- <tr>
+            <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+            <td><b>Release Date:</b> {{product.releaseDate}}</td>
+    </tr> -->
+    <tr>
+        <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+        <td></td>
+    </tr>
+    <tr>
+            <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+        <td>
+            <input type="submit" value="Add to Cart" name="cart" onclick=cart() />&nbsp;&nbsp;&nbsp;&nbsp;
+            <input type="submit" value="Add to Wishlist" name="wishlist" onclick=wishlist() />
+            
+        </td>
+    </tr>
+</table>
+</body>
+</html>
